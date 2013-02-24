@@ -5,6 +5,6 @@ ZSH=$HOME/.oh-my-zsh
 # Prevent autoupdating
 DISABLE_AUTO_UPDATE="true"
 
-plugins=(git history)
+plugins=(git osx history)
 
 source $ZSH/oh-my-zsh.sh
