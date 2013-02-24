@@ -1,0 +1,22 @@
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+[user]
+	name = natewalck
+	email = nate@osxadm.in
+[color]
+	ui = true
+[core]
+	editor = mvim -f
+ excludesfile = /opt/boxen/config/git/gitignore
+
+[hub]
+protocol = https
+
+[credential]
+helper = /opt/boxen/bin/boxen-git-credential
