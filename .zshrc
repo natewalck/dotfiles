@@ -3,6 +3,8 @@ HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=10000
 
+PATH=$PATH:/usr/local/packer
+
 setopt appendhistory autocd beep nomatch
 
 bindkey -v
