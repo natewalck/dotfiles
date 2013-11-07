@@ -12,7 +12,6 @@ def push_up():
     screen = win.screen()
     frame = screen.frame_without_dock_or_menu()
     frame.h /= 2
-    frame.inset(10, 10)
     win.set_frame(frame)
 
 
@@ -22,7 +21,6 @@ def push_down():
     frame = screen.frame_without_dock_or_menu()
     frame.y += frame.h / 2
     frame.h /= 2
-    frame.inset(10, 10)
     win.set_frame(frame)
 
 
@@ -31,7 +29,6 @@ def push_left():
     screen = win.screen()
     frame = screen.frame_without_dock_or_menu()
     frame.w /= 2
-    frame.inset(10, 10)
     win.set_frame(frame)
 
 
@@ -41,7 +38,6 @@ def push_right():
     frame = screen.frame_without_dock_or_menu()
     frame.x += frame.w / 2
     frame.w /= 2
-    frame.inset(10, 10)
     win.set_frame(frame)
 
 
@@ -49,7 +45,6 @@ def max_window():
     win = zephyros.api.focused_window()
     screen = win.screen()
     frame = screen.frame_without_dock_or_menu()
-    frame.inset(10, 10)
     win.set_frame(frame)
 
 
