@@ -2,6 +2,8 @@
 
 ZSH=$HOME/.oh-my-zsh
 
+EDITOR=/usr/local/bin/subl
+
 # Prevent autoupdating
 DISABLE_AUTO_UPDATE="true"
 

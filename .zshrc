@@ -3,7 +3,7 @@ HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=10000
 
-path+=('/usr/local/packer' '/opt/boxen/bin')
+path+=('/usr/local/packer')
 export PATH
 
 setopt appendhistory autocd beep nomatch
