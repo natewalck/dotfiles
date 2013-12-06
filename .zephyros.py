@@ -41,6 +41,131 @@ def push_right():
     win.set_frame(frame)
 
 
+def push_upper_left():
+    win = zephyros.api.focused_window()
+    screen = win.screen()
+    frame = screen.frame_without_dock_or_menu()
+    frame.w /= 4
+    frame.h /= 3
+    win.set_frame(frame)
+
+
+def push_upper_center_left():
+    win = zephyros.api.focused_window()
+    screen = win.screen()
+    frame = screen.frame_without_dock_or_menu()
+    frame.x += frame.w / 4
+    frame.w /= 4
+    frame.h /= 3
+    win.set_frame(frame)
+
+
+def push_upper_center_right():
+    win = zephyros.api.focused_window()
+    screen = win.screen()
+    frame = screen.frame_without_dock_or_menu()
+    frame.x += 2 * frame.w / 4
+    frame.w /= 4
+    frame.h /= 3
+    win.set_frame(frame)
+
+
+def push_upper_right():
+    win = zephyros.api.focused_window()
+    screen = win.screen()
+    frame = screen.frame_without_dock_or_menu()
+    frame.x += 3 * frame.w / 4
+    frame.w /= 4
+    frame.h /= 3
+    win.set_frame(frame)
+
+
+def push_middle_left():
+    win = zephyros.api.focused_window()
+    screen = win.screen()
+    frame = screen.frame_without_dock_or_menu()
+    frame.y += frame.h / 3
+    frame.w /= 4
+    frame.h /= 3
+    win.set_frame(frame)
+
+
+def push_middle_center_left():
+    win = zephyros.api.focused_window()
+    screen = win.screen()
+    frame = screen.frame_without_dock_or_menu()
+    frame.y += frame.h / 3
+    frame.x += frame.w / 4
+    frame.w /= 4
+    frame.h /= 3
+    win.set_frame(frame)
+
+
+def push_middle_center_right():
+    win = zephyros.api.focused_window()
+    screen = win.screen()
+    frame = screen.frame_without_dock_or_menu()
+    frame.y += frame.h / 3
+    frame.x += 2 * frame.w / 4
+    frame.w /= 4
+    frame.h /= 3
+    win.set_frame(frame)
+
+
+def push_middle_right():
+    win = zephyros.api.focused_window()
+    screen = win.screen()
+    frame = screen.frame_without_dock_or_menu()
+    frame.y += frame.h / 3
+    frame.x += 3 * frame.w / 4
+    frame.w /= 4
+    frame.h /= 3
+    win.set_frame(frame)
+
+
+def push_lower_left():
+    win = zephyros.api.focused_window()
+    screen = win.screen()
+    frame = screen.frame_without_dock_or_menu()
+    frame.y += 2 * frame.h / 3
+    frame.w /= 4
+    frame.h /= 3
+    win.set_frame(frame)
+
+
+def push_lower_center_left():
+    win = zephyros.api.focused_window()
+    screen = win.screen()
+    frame = screen.frame_without_dock_or_menu()
+    frame.y += 2 * frame.h / 3
+    frame.x += frame.w / 4
+    frame.w /= 4
+    frame.h /= 3
+    win.set_frame(frame)
+
+
+def push_lower_center_right():
+    win = zephyros.api.focused_window()
+    screen = win.screen()
+    frame = screen.frame_without_dock_or_menu()
+    frame.y += 2 * frame.h / 3
+    frame.x += 2 * frame.w / 4
+    frame.w /= 4
+    frame.h /= 3
+    win.set_frame(frame)
+
+
+def push_lower_right():
+    win = zephyros.api.focused_window()
+    screen = win.screen()
+    frame = screen.frame_without_dock_or_menu()
+    frame.y += 2 * frame.h / 3
+    frame.x += 3 * frame.w / 4
+    frame.w /= 4
+    frame.h /= 3
+    win.set_frame(frame)
+
+
 def max_window():
     win = zephyros.api.focused_window()
     screen = win.screen()
@@ -132,9 +257,21 @@ def configuration():
     zephyros.api.bind('DOWN', mash, push_down)
     zephyros.api.bind('LEFT', mash, push_left)
     zephyros.api.bind('RIGHT', mash, push_right)
+    zephyros.api.bind('Q', mash, push_upper_left)
+    zephyros.api.bind('W', mash, push_upper_center_left)
+    zephyros.api.bind('E', mash, push_upper_center_right)
+    zephyros.api.bind('R', mash, push_upper_right)
+    zephyros.api.bind('A', mash, push_middle_left)
+    zephyros.api.bind('S', mash, push_middle_center_left)
+    zephyros.api.bind('D', mash, push_middle_center_right)
+    zephyros.api.bind('F', mash, push_middle_right)
+    zephyros.api.bind('Z', mash, push_lower_left)
+    zephyros.api.bind('X', mash, push_lower_center_left)
+    zephyros.api.bind('C', mash, push_lower_center_right)
+    zephyros.api.bind('V', mash, push_lower_right)
     zephyros.api.bind('M', mash, max_window)
-    zephyros.api.bind('C', mash, center_window)
-    zephyros.api.bind('D', mash, show_window_title)
+    zephyros.api.bind('C', optionalt, center_window)
+    zephyros.api.bind('T', mash, show_window_title)
     zephyros.api.bind('H', mash, nudge_window_left)
     zephyros.api.bind('J', mash, nudge_window_down)
     zephyros.api.bind('K', mash, nudge_window_up)
