@@ -10,6 +10,4 @@ export EDITOR=/usr/bin/vim
 export MYZSH=$HOME/src/dotfiles/zsh
 for config_file ($MYZSH/**/*.zsh ) source $config_file
 
-source /opt/facebook/share/scm-prompt
-
 setopt appendhistory autocd nomatch
