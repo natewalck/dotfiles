@@ -1,22 +1,22 @@
 [alias]
-  co = checkout
-  ci = commit
-  st = status
-  br = branch
-  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-  type = cat-file -t
-  dump = cat-file -p
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+    type = cat-file -t
+    dump = cat-file -p
 [user]
-	name = Nate Walck
-  email = nate.walck@gmail.com
+    name = Nate Walck
+    email = nate.walck@gmail.com
 [color]
-  ui = true
+    ui = true
 [core]
-  excludesfile = ~/.gitignore
-	editor = /usr/bin/vi
+    excludesfile = ~/.gitignore
+    editor = /usr/bin/vi
 
 [hub]
-  protocol = https
+    protocol = https
 
 [push]
-  default = simple
+    default = simple
