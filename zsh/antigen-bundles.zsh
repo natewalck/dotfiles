@@ -13,8 +13,7 @@ antigen bundle history
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Theme options and load
-BULLETTRAIN_PROMPT_SEPARATE_LINE=false
-antigen theme https://github.com/caiogondim/bullet-train-oh-my-zsh-theme.git bullet-train
+antigen theme bhilburn/powerlevel9k powerlevel9k
 
 # Tell antigen you are done
 antigen apply
