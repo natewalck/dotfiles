@@ -10,4 +10,5 @@ export EDITOR=/usr/bin/vim
 export MYZSH=$HOME/code/dotfiles/zsh
 for config_file ($MYZSH/**/*.zsh ) source $config_file
 
+
 setopt appendhistory autocd nomatch
