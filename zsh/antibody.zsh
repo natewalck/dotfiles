@@ -1,4 +1,5 @@
 # Path to antigen
-source "$(brew --prefix)/share/antibody.zsh"
+
+source $HOME/code/antibody/antibody.zsh
 
 antibody bundle < "$MYZSH/antibody-bundles.txt"
