@@ -1,5 +1,5 @@
 # Path to antigen
 
-source $HOME/code/antibody/antibody.zsh
+source <(antibody init)
 
 antibody bundle < "$MYZSH/antibody-bundles.txt"
