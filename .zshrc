@@ -12,6 +12,12 @@ set -o emacs
 bindkey '^[[A' up-line-or-search
 bindkey '^[[B' down-line-or-search
 
+# Make the delete key (or Fn + Delete on the Mac) work instead of outputting a ~
+bindkey '^?' backward-delete-char
+bindkey "^[[3~" delete-char
+bindkey "^[3;5~" delete-char
+bindkey "\e[3~" delete-char
+
 # Load settings from another dir to keep this .zshrc clean
 export MYZSH=$HOME/code/dotfiles/zsh
 for config_file ($MYZSH/**/*.zsh ) source $config_file
