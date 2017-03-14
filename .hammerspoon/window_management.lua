@@ -50,36 +50,34 @@ hs.hotkey.bind(mash.all, "down", adjustWindow('0,1 4x1'))
 hs.hotkey.bind(mash.all, "left", adjustWindow('0,0 2x2'))
 
 -- top left
-hs.hotkey.bind(mash.all, "q", adjustWindow('0,0 1x1'))
+hs.hotkey.bind(mash.all, "q", adjustWindow('0,0 2x1'))
 
 -- top left middle
-hs.hotkey.bind(mash.all, "w", adjustWindow('1,0 1x1'))
+-- hs.hotkey.bind(mash.all, "w", adjustWindow('1,0 1x1'))
 
 -- top right middle
-hs.hotkey.bind(mash.all, "e", adjustWindow('2,0 1x1'))
+-- hs.hotkey.bind(mash.all, "e", adjustWindow('2,0 1x1'))
 
 -- top right
-hs.hotkey.bind(mash.all, "r", adjustWindow('3,0 1x1'))
+hs.hotkey.bind(mash.all, "w", adjustWindow('2,0 2x1'))
 
 -- bottom left
 
-hs.hotkey.bind(mash.all, "a", adjustWindow('0,1 1x1'))
+hs.hotkey.bind(mash.all, "a", adjustWindow('0,2 2x1'))
 -- bottom left middle
-hs.hotkey.bind(mash.all, "s", adjustWindow('1,1 1x1'))
+-- hs.hotkey.bind(mash.all, "s", adjustWindow('1,1 1x1'))
 
 -- bottom right middle
-hs.hotkey.bind(mash.all, "d", adjustWindow('2,1 1x1'))
+-- hs.hotkey.bind(mash.all, "d", adjustWindow('2,1 1x1'))
 
 -- bottom right
-hs.hotkey.bind(mash.all, "f", adjustWindow('3,1 1x1'))
+hs.hotkey.bind(mash.all, "s", adjustWindow('2,1 2x1'))
 
 -- far left fourth
-hs.hotkey.bind(mash.split, "left", adjustWindow('0,0 1x2'))
+-- hs.hotkey.bind(mash.split, "left", adjustWindow('0,0 1x2'))
 
 -- far right fourth
-hs.hotkey.bind(mash.split, "right", adjustWindow('3,0 1x2'))
+-- hs.hotkey.bind(mash.split, "right", adjustWindow('3,0 1x2'))
 
 -- fullscreen
 hs.hotkey.bind(mash.all, "m", hs.grid.maximizeWindow)
-
-
