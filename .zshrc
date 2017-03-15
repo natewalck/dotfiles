@@ -18,6 +18,10 @@ bindkey "^[[3~" delete-char
 bindkey "^[3;5~" delete-char
 bindkey "\e[3~" delete-char
 
+plugins=(zsh-completions)
+autoload -U compinit && compinit
+
+
 # Load settings from another dir to keep this .zshrc clean
 export MYZSH=$HOME/code/dotfiles/zsh
 for config_file ($MYZSH/**/*.zsh ) source $config_file
