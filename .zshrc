@@ -26,5 +26,8 @@ autoload -U compinit && compinit
 export MYZSH=$HOME/code/dotfiles/zsh
 for config_file ($MYZSH/**/*.zsh ) source $config_file
 
+# Set key for accepting auto suggest
+bindkey '^ ' autosuggest-accept
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=159"
 
 setopt appendhistory autocd nomatch
