@@ -1,6 +1,6 @@
 # History settings
 HISTFILE=~/.histfile
-HISTSIZE=10000
+HISTSIZE=100000
 SAVEHIST=$HISTSIZE
 
 export KEYTIMEOUT=1
