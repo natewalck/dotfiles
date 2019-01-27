@@ -1,5 +1,3 @@
-# if [ $(uname) = "Linux" ]; then
-#     export PATH=$PATH:/usr/local/go/bin
-# fi
+export PATH=$PATH:/usr/local/go/bin
 # export GOPATH=$HOME/code/go
 # export PATH=$PATH:$GOPATH/bin
