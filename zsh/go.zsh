@@ -1,3 +1,3 @@
 export PATH=$PATH:/usr/local/go/bin
-# export GOPATH=$HOME/code/go
+export GOPATH=$HOME/go
 # export PATH=$PATH:$GOPATH/bin
