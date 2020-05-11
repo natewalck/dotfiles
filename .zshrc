@@ -31,3 +31,6 @@ POWERLEVEL9K_SHOW_CHANGESET=true
 POWERLEVEL9K_DISABLE_RPROMPT=true
 
 setopt appendhistory autocd nomatch
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+

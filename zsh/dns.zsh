@@ -1,0 +1,3 @@
+digall() {
+    dig +nocmd $1 any +multiline +noall +answer
+}

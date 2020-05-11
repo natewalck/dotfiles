@@ -6,6 +6,7 @@
     hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
     type = cat-file -t
     dump = cat-file -p
+    changed = diff --name-only HEAD^1
 [user]
     name = Nate Walck
     email = nate.walck@gmail.com
