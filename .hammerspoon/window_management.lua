@@ -71,5 +71,5 @@ hs.hotkey.bind(mash.all, "s", adjustWindowResAware('3,1 2x1', '2,1 2x1'))
 -- fullscreen
 hs.hotkey.bind(mash.all, "m", hs.grid.maximizeWindow)
 
--- HALP
-hs.hotkey.bind(mash.all, "h", hs.grid.show)
+-- Show grid for dynamic arrangement
+hs.hotkey.bind(mash.all, "x", hs.grid.show)
