@@ -16,7 +16,7 @@ hs.grid.setMargins('0x0')
 
 
 -- Reload config
-hs.hotkey.bind(mash.all, "-", function()
+hs.hotkey.bind(mash.split, "-", function()
   hs.reload()
   logger.i("Reloaded config")
 end)
