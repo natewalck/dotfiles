@@ -3,3 +3,4 @@ work_*
 private-*
 antigen
 zsh/bundle
+.DS_Store
