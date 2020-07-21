@@ -34,6 +34,6 @@
     "window.zoomLevel": 1,
     "workbench.tree.indent": 14,
     "files.insertFinalNewline": true,
-    "ruby.rubocop.executePath": "/Users/n8/.rbenv/versions/2.6.5/bin/ruby",
+    "ruby.rubocop.executePath": "/Users/n8/.rbenv/versions/2.7.1/bin/ruby",
     "go.useLanguageServer": true,
 }
