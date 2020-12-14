@@ -3,7 +3,7 @@
 # Runs commands to bootstrap machine
 
 if [[ $EUID == 0 ]]; then
-   echo "This script must be run as your normal user account" 
+   echo "This script must be run as your normal user account"
    exit 1
 fi
 
@@ -18,6 +18,7 @@ rm -rf ~/.hammerspoon
 ln -s ~/code/dotfiles/.hammerspoon ~
 
 ln -s ~/code/dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/code/dotfiles/.gitconfig-personal ~/.gitconfig-personal
 
 # Setup zsh
 curl -sL git.io/antibody | sh -s

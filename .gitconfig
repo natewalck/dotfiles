@@ -7,9 +7,6 @@
     type = cat-file -t
     dump = cat-file -p
     changed = diff --name-only HEAD^1
-[user]
-    name = Nate Walck
-    email = nate.walck@gmail.com
 [color]
     ui = true
 [core]
@@ -21,3 +18,7 @@
 
 [push]
     default = simple
+[includeIf "gitdir:~/code/"]
+  path = .gitconfig-personal
+[includeIf "gitdir:~/code/square/"]
+  path = .gitconfig-work
