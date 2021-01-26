@@ -7,7 +7,7 @@ if [[ $EUID == 0 ]]; then
    exit 1
 fi
 
-# Disable the accent menu when holidng a button down
+# Disable the accent menu when holidng a button down^
 defaults write -g ApplePressAndHoldEnabled -bool false
 
 # Command to show battery percent
@@ -23,4 +23,5 @@ ln -s ~/code/dotfiles/.gitconfig-personal ~/.gitconfig-personal
 # Setup zsh
 curl -sL git.io/antibody | sh -s
 ln -s ~/code/dotfiles/.zshrc ~/.zshrc
+sudo ln -s ~/code/dotfiles/bin/antibody /usr/local/bin/antibody
 
