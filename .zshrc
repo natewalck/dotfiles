@@ -1,7 +1,9 @@
 # History settings
-HISTFILE=~/.histfile
-HISTSIZE=100000
-SAVEHIST=$HISTSIZE
+export HISTFILE=~/.histfile
+export HISTSIZE=100000
+export SAVEHIST=$HISTSIZE
+setopt INC_APPEND_HISTORY
+alias history='history 1'
 
 export KEYTIMEOUT=1
 export EDITOR=/usr/bin/vim
@@ -31,7 +33,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=159"
 POWERLEVEL9K_SHOW_CHANGESET=true
 POWERLEVEL9K_DISABLE_RPROMPT=true
 
-setopt appendhistory autocd nomatch
+setopt autocd nomatch
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
