@@ -19,6 +19,9 @@
 [push]
     default = simple
 [includeIf "gitdir:~/code/"]
-  path = .gitconfig-personal
+  path = ~/code/dotfiles/.gitconfig-personal
 [includeIf "gitdir:~/code/square/"]
-  path = .gitconfig-work
+  path = ~/code/dotfiles/.gitconfig-work
+
+[init]
+	defaultBranch = main
