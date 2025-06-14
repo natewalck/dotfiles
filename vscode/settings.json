@@ -1,15 +1,10 @@
 // Place your settings in this file to overwrite the default settings
 {
     "editor.rulers": [80,120],
-    "go.buildOnSave": true,
-    "go.lintOnSave": true,
-    "go.vetOnSave": true,
     "go.buildFlags": [],
     "go.lintFlags": [],
     "go.vetFlags": [],
     "go.coverOnSave": false,
-    "go.useCodeSnippetsOnFunctionSuggest": false,
-    "go.formatOnSave": true,
 
     "editor.tabSize": 2,
     "editor.formatOnType": true,
@@ -34,6 +29,4 @@
     "window.zoomLevel": 1,
     "workbench.tree.indent": 14,
     "files.insertFinalNewline": true,
-    "ruby.rubocop.executePath": "/Users/n8/.rbenv/versions/2.7.1/bin/ruby",
-    "go.useLanguageServer": true,
 }
