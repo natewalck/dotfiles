@@ -25,3 +25,5 @@ curl -sL git.io/antibody | sh -s
 ln -s ~/code/dotfiles/.zshrc ~/.zshrc
 sudo ln -s ~/code/dotfiles/bin/antibody /usr/local/bin/antibody
 
+# Setup wezterm
+ln -s ~/code/dotfiles/.wezterm.lua ~/.wezterm.lua
